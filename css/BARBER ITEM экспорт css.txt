@@ -1,0 +1,414 @@
+﻿.Layer_9_copy {
+  background-image: url("Layer 9 copy.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1200px;
+  height: 72px;
+  z-index: 56;
+}
+
+logo
+
+header почти такой же
+информация-контакты-вход
+логотип только есть
+
+footer тот же...
+
+
+.набор_для_путешествий_«Baxter_of_California» {
+  font-size: 12.757px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-align: left;
+  -moz-transform: matrix( 2.35162658126206,0,0,2.35162658126206,0,0);
+  -webkit-transform: matrix( 2.35162658126206,0,0,2.35162658126206,0,0);
+  -ms-transform: matrix( 2.35162658126206,0,0,2.35162658126206,0,0);
+  position: absolute;
+  left: 281.727px;
+  top: 151.456px;
+  z-index: 29;
+}
+
+
+.ГЛАВНАЯ_ {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 128.937px;
+  top: 208.25px;
+  width: 47px;
+  height: 10px;
+  z-index: 31;
+}
+
+.Shape_1 {
+  background-color: rgb(241, 205, 176);
+  position: absolute;
+  left: 191px;
+  top: 185px;
+  width: 12px;
+  height: 12px;
+  z-index: 36;
+}
+
+.МАГАЗИН {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 215.844px;
+  top: 179.002px;
+  z-index: 32;
+}
+
+
+.Shape_1_copy {
+  background-color: rgb(241, 205, 176);
+  position: absolute;
+  left: 283px;
+  top: 185px;
+  width: 12px;
+  height: 12px;
+  z-index: 37;
+}
+
+
+.СРЕДСТВА_ДЛЯ_УХОДА {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 309.937px;
+  top: 203.252px;
+  z-index: 33;
+}
+
+
+
+.Shape_1_copy_2 {
+  background-color: rgb(241, 205, 176);
+  position: absolute;
+  left: 447px;
+  top: 185px;
+  width: 12px;
+  height: 12px;
+  z-index: 35;
+}
+    
+
+
+.набор_для_путешествий_«Baxter_of_California» {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(171, 169, 167);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 474.937px;
+  top: 202.09px;
+  z-index: 34;
+}
+
+Layer 47
+
+.Layer_45 {
+  background-image: url("Layer 45.png");
+  position: absolute;
+  left: 116px;
+  top: 761px;
+  width: 169px;
+  height: 178px;
+  z-index: 4;
+}
+
+.Layer_46 {
+  background-image: url("Layer 46.png");
+  position: absolute;
+  left: 276px;
+  top: 761px;
+  width: 169px;
+  height: 178px;
+  z-index: 5;
+}
+
+
+.есть_в_наличии {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 678.937px;
+  top: 304.25px;
+  width: 89px;
+  height: 10px;
+  z-index: 20;
+}
+     
+
+.Артикул:_dexter_ae {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(174, 174, 174);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: right;
+  position: absolute;
+  left: 691.77px;
+  top: 304.25px;
+  width: 114px;
+  height: 10px;
+  z-index: 21;
+}
+  
+
+.Travel_Kit_–_необходимый_аксессуар_во_время_люб {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 679.923px;
+  top: 356.088px;
+  width: 379px;
+  height: 135px;
+  z-index: 19;
+}
+
+
+.Layer_41 {
+  background-image: url("Layer 41.png");
+  position: absolute;
+  left: 680px;
+  top: 508px;
+  width: 109px;
+  height: 43px;
+  z-index: 23;
+}
+
+
+._2_900_₽ {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 716.294px;
+  top: 517.002px;
+  z-index: 25;
+}
+
+
+.Layer_12_copy_13 {
+  background-image: url("Layer 12 copy 13.png");
+  position: absolute;
+  left: 789px;
+  top: 508px;
+  width: 78px;
+  height: 43px;
+  z-index: 22;
+}
+
+.КУПИТЬ {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 806.937px;
+  top: 517.002px;
+  z-index: 24;
+}
+
+
+
+.В_набор_входят: {
+  font-size: 10.206px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: left;
+  -moz-transform: matrix( 2.35162658126206,0,0,2.35162658126206,0,0);
+  -webkit-transform: matrix( 2.35162658126206,0,0,2.35162658126206,0,0);
+  -ms-transform: matrix( 2.35162658126206,0,0,2.35162658126206,0,0);
+  position: absolute;
+  left: 721.387px;
+  top: 634.113px;
+  z-index: 18;
+}
+
+
+
+
+.Средство_для_умывания__50_мл__Увлажняющий_крем_ {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 699.937px;
+  top: 694.252px;
+  z-index: 13;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
