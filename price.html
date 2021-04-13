@@ -14,7 +14,7 @@
         <ul class="site-navigation">
           <li><a href="info.html" aria-label="Ссылка на страницу с информацией.">Информация</a></li>
            <li><a href="news.html" aria-label="Ссылка на страницу с новостями.">Новости</a></li>
-          <li class="site-navigation-current"aria-label="Ссылка на текущую страницу с ипрайс листом." ><a href="#">Прайс-лист</a></li>
+          <li class="site-navigation-current"aria-label="Ссылка на текущую страницу с ипрайс листом."><a href="price.html">Прайс-лист</a></li>
           <li><a href="shop.html" aria-label="Ссылка на страницу магазина.">Магазин</a></li>
            <li><a href="contacts.html" aria-label="Ссылка на страницу с контактами.">Контакты</a></li>
          </ul>
@@ -23,11 +23,12 @@
         </ul>
       </nav>
     </header>
+
     <main class="container">
       <h1>Прайс-лист</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs-current"><a href="#">Прайс-лист</a></li>
+        <li class="breadcrumbs-current"><a href="price.html">Прайс-лист</a></li>
       </ul>
       <b class="product-slogan">Истинно мужская класика</b>
       <section class="servises">
@@ -66,6 +67,7 @@
           чувствовать себя комфортно и свободно!</p>
       </section>
     </main>
+
     <footer class="main-footer">
         <p class="footer-contact"></p>
         <div class="footer-social">
@@ -84,17 +86,16 @@
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль</p>
-        <form action="hhtp://    echo.htmlacademy.ru" method="post" class="modal-login-form" aria-label="Форма входа в учетную запись.">
+        <form action="hhtp://echo.htmlacademy.ru" method="post" class="modal-login-form" aria-label="Форма входа в учетную запись.">
 
           <input type="text" name="username" placeholder="ЛОГИН" value="" aria-label="Введите ваш логин.">
           <input type="password" name="password" placeholder="ПАРОЛЬ" value="" aria-label="Введите ваш пароль.">
-          <input type="radio" name="" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке.">
-          <label for="modal-login-radio">ЗАПОМНИТЕ МЕНЯ</label>
-          <a href="#" aria-label="Ссылка на страницу восстановления пароля.">Я ЗАБЫЛ ПАРОЛЬ!</a>
-          <input type="submit" value="ВОЙТИ" aria-label="Кнопка входа в учетную запись.">
-
+          <input type="checkbox" name="" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке.">
+          <label for="modal-login-radio">Запомните меня!</label>
+          <a href="login.html" aria-label="Ссылка на страницу восстановления пароля.">Я забыл пароль!</a>
+          <button class="button form-apointment-button" type="submit" aria-label="Кнопка входа в учетную запись.">Войти</button>
         </form>
-        <button type="button" class="modal-close" aria-label="Кнопка закрытия окна входа на сайт."><img src="img/cross.png" width="19px" height="19px"></button>
+        <button type="button" class="modal-close" aria-label="Кнопка закрытия окна входа на сайт."><img src="img/cross.svg" width="19px" height="19px"></button>
       </section>
   </body>
 </html>
