@@ -35,7 +35,33 @@
 
       <section class="filters">
         <h2 class="visualy-hidden">Фильтр товаров</h2>
-        <!-- здесь будет форма -->
+        <form action="hhtp://echo.htmlacademy.ru" method="get">
+          <fieldset id="manufacturers">
+            <label for="manufacturers">Производители:</label>
+            <input type="checkbox" name="baxter-of-california" value="" id="baxter-of-california" checked aria-label="Добавить или убрать Baxter of California из фильтра">
+            <label for="baxter-of-california">Baxter of California</label>
+            <input type="checkbox" name="mr-natty" value="" id="mr-natty" name="" value="" aria-label="Добавить или убрать Mr Natty из фильтра">
+            <label for="mr-natty">Mr Natty</label>
+            <input type="checkbox" name="suavecito" value="" id="suavecito" checked aria-label="Добавить или убрать Suavecito из фильтра">
+            <label for="suavecito">Suavecito</label>
+            <input type="checkbox" name="malin-goetz" value="" id="malin-goetz" aria-label="Добавить или убрать Malin+Goetz из фильтра">
+            <label for="malin-goetz">Malin+Goetz</label>
+            <input type="checkbox" name="murrays" value="" id="murrays" aria-label="Добавить или убрать Murray`s из фильтра">
+            <label for="murrays">Murray`s</label>
+            <input type="checkbox" name="american-crew" value="" id="american-crew" checked aria-label="Добавить или убрать American Crew из фильтра">
+            <label for="american-crew">American Crew</label>
+          </fieldset>
+          <fieldset id="product-groups">
+            <label for="product-groups">Группы товаров:</label>
+            <input type="radio" name="product-groups" value="shaving-accessories" id="shaving-accessories" aria-label="Выбрать бритвенные принадлежности в строке выбора">
+            <label for="shaving-accessories">Бритвенные принадлежности</label>
+            <input type="radio" name="product-groups" value="care-products" id="care-products" checked aria-label="Выбрать средства для ухода в строке выбора">
+            <label for="care-products">Средства для ухода</label>
+            <input type="radio" name="product-groups" value="accessories" id="accessories" aria-label="Выбрать аксессуары в строке выбора">
+            <label for="accessories">Аксессуары</label>
+          </fieldset>
+          <button type="submit" aria-label="Кнопка покажет товары с применением выбранных настроек фильтра">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
