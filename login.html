@@ -1,9 +1,13 @@
+<!-- Сделал по заданию 4 главы 1 курса -->
+<!-- ?Проверь пожалуйста. Прогнал на валидаторе все работает. -->
+<!-- ! Спасибо!:) -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Регистрация и вход в учётную запись Барбершоп Бородинский</title>
   </head>
+
   <body>
     <main class="main-container-login">
       <h1>Форма регистрации учётной записи и форма входа</h1>
@@ -19,19 +23,20 @@
           <button class="button" type="submit" aria-label="Кнопка отправки формы.">Отправить</button>
         </form>
       </section>
+
       <section class="account-registration-form">
         <h2>Форма входа в учетную запись</h2>
         <p>Введите свой логин и пароль</p>
           <form action="hhtp://echo.htmlacademy.ru" method="post" class="modal-login-form" aria-label="Форма входа в учетную запись.">
             <input type="text" name="username" placeholder="ЛОГИН" value="" aria-label="Введите ваш логин.">
             <input type="password" name="password" placeholder="ПАРОЛЬ" value="" aria-label="Введите ваш пароль.">
-            <input type="checkbox" name="" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке.">
+            <input type="checkbox" name="login-radio" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке.">
             <label for="modal-login-radio">Запомните меня!</label>
             <a href="login.html" aria-label="Ссылка на страницу восстановления пароля.">Я забыл пароль!</a>
             <button class="button form-apointment-button" type="submit" aria-label="Кнопка входа в учетную запись.">Войти</button>
           </form>
       </section>
-    <a href="index.html" aria-label="Ссылка переход на главную">На главную.</a>
-  </main>
+      <a href="index.html" aria-label="Ссылка переход на главную">На главную.</a>
+    </main>
   </body>
 </html>

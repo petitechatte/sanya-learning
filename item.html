@@ -1,3 +1,6 @@
+<!-- Сделал по заданию 4 главы 1 курса -->
+<!-- ?Проверь пожалуйста. Прогнал на валидаторе все работает. -->
+<!-- ! Спасибо!:) -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -5,6 +8,7 @@
     <title>Барбершоп Бородинский товары</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
     <header class="main-header">
       <nav class="main-navigation" aria-label="Навигация сайта.">
@@ -23,8 +27,8 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
 
+    <main class="container">
       <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
 
       <ul class="breadcrumbs">
@@ -35,7 +39,6 @@
 
       <section class="product-photos">
         <h2 class="visualy-hidden">Изображения товара</h2>
-
         <p class="product-photo-full">
           <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
         </p>
@@ -55,7 +58,6 @@
           <b>2900 р</b>
           <a class="button" href="#">Купить</a>
         </p>
-
         <h3>В набор входят:</h3>
         <ul>
           <li>Средство для умывания (50 мл)</li>
@@ -64,9 +66,9 @@
           <li>Крем после бритья, шампунь (50 мл)</li>
           <li>Удобная кожаная косметичка</li>
         </ul>
-
       </section>
     </main>
+
     <footer class="main-footer">
         <p class="footer-contact">
           Барбершоп «Бородинский»<br>
@@ -92,18 +94,18 @@
 
           <input type="text" name="username" placeholder="ЛОГИН" value="" aria-label="Введите ваш логин.">
           <input type="password" name="password" placeholder="ПАРОЛЬ" value="" aria-label="Введите ваш пароль.">
-          <input type="checkbox" name="" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке.">
+          <input type="checkbox" name="login-radio" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке.">
           <label for="modal-login-radio">Запомните меня!</label>
           <a href="login.html" aria-label="Ссылка на страницу восстановления пароля.">Я забыл пароль!</a>
           <button class="button form-apointment-button" type="submit" aria-label="Кнопка входа в учетную запись.">Войти</button>
         </form>
-        <button type="button" class="modal-close" aria-label="Кнопка закрытия окна входа на сайт."><img src="img/cross.svg" width="19px" height="19px"></button>
+        <button type="button" class="modal-close" aria-label="Кнопка закрытия окна входа на сайт."><img src="img/cross.svg" width="19" height="19" alt="Кпопка крест для закрытия модального окна"></button>
       </section>
 
-       <section class="modal modal-map">
+      <section class="modal modal-map">
         <h2 class="visualy-hidden">Как до нас добраться</h2>
-        <img src="img/map-popup.png" width="782px" height="577px" alt="Карта, на которой показано, как к нам проехать.">
-        <button class="modal-close" type="button" aria-label="Кнопка закрытия окна карты"><img src="img/cross.png" width="19px" height="19px"></button>
+        <img src="img/map-popup.png" width="782" height="577" alt="Карта, на которой показано, как к нам проехать.">
+        <button class="modal-close" type="button" aria-label="Кнопка закрытия модального окна."><img src="img/cross.png" width="19" height="19" alt="Кпопка крест для закрытия модального окна"></button>
       </section>
   </body>
 </html>

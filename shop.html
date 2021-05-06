@@ -1,3 +1,6 @@
+<!-- Сделал по заданию 4 главы 1 курса -->
+<!-- ?Проверь пожалуйста. Прогнал на валидаторе все работает. -->
+<!-- ! Спасибо!:) -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -5,6 +8,7 @@
     <title>Барбершоп Бородинский магазин</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
     <header class="main-header">
       <nav class="main-navigation">
@@ -13,7 +17,7 @@
         </a>
         <ul class="site-navigation">
           <li><a href="info.html" aria-label="Ссылка на страницу с информацией.">Информация</a></li>
-           <li><a href="news.html" aria-label="Ссылка на страницу с новостями.">Новости</a></li>
+          <li><a href="news.html" aria-label="Ссылка на страницу с новостями.">Новости</a></li>
           <li ><a href="price.html" aria-label="Ссылка на страницу с ипрайс листом.">Прайс-лист</a></li>
           <li class="site-navigation-current"><a href="catalog.html" aria-label="Ссылка на текущую страницу магазина.">Магазин</a></li>
           <li><a href="contacts.html" aria-label="Ссылка на страницу с контактами.">Контакты</a></li>
@@ -36,11 +40,11 @@
       <section class="filters">
         <h2 class="visualy-hidden">Фильтр товаров</h2>
         <form action="hhtp://echo.htmlacademy.ru" method="get">
-          <fieldset id="manufacturers">
-            <label for="manufacturers">Производители:</label>
-            <input type="checkbox" name="baxter-of-california" value="" id="baxter-of-california" checked aria-label="Добавить или убрать Baxter of California из фильтра">
+          <fieldset>
+            <legend>Производители:</legend>
+            <input type="checkbox" name="baxter-of-california" value="baxter-of-california" id="baxter-of-california" checked aria-label="Добавить или убрать Baxter of California из фильтра">
             <label for="baxter-of-california">Baxter of California</label>
-            <input type="checkbox" name="mr-natty" value="" id="mr-natty" name="" value="" aria-label="Добавить или убрать Mr Natty из фильтра">
+            <input type="checkbox" name="mr-natty" value="" id="mr-natty" aria-label="Добавить или убрать Mr Natty из фильтра">
             <label for="mr-natty">Mr Natty</label>
             <input type="checkbox" name="suavecito" value="" id="suavecito" checked aria-label="Добавить или убрать Suavecito из фильтра">
             <label for="suavecito">Suavecito</label>
@@ -51,8 +55,8 @@
             <input type="checkbox" name="american-crew" value="" id="american-crew" checked aria-label="Добавить или убрать American Crew из фильтра">
             <label for="american-crew">American Crew</label>
           </fieldset>
-          <fieldset id="product-groups">
-            <label for="product-groups">Группы товаров:</label>
+          <fieldset>
+            <legend>Группы товаров:</legend>
             <input type="radio" name="product-groups" value="shaving-accessories" id="shaving-accessories" aria-label="Выбрать бритвенные принадлежности в строке выбора">
             <label for="shaving-accessories">Бритвенные принадлежности</label>
             <input type="radio" name="product-groups" value="care-products" id="care-products" checked aria-label="Выбрать средства для ухода в строке выбора">
@@ -67,25 +71,23 @@
       <section class="catalog">
         <h2 class="visualy-hidden">Список средств для ухода</h2>
         <ul class="catalog-list">
-
-         <li class="catalog-item">
-           <h3>
+        <li class="catalog-item">
+          <h3>
             <a href="#">
-             <span class="catalog-category">Набор для путешествий</span>
-             <span class="catalog-item-title">«Baxter of California»</span>
+            <span class="catalog-category">Набор для путешествий</span>
+            <span class="catalog-item-title">«Baxter of California»</span>
             </a>
-           </h3>
-           <p class="catalog-item-image">
-             <a href="#">
-               <img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»" >
-             </a>
-           </p>
-           <p class="catalog-item-price">
-             <b>2900 р</b>
-             <a class="button" href="#">Купить</a>
-           </p>
+          </h3>
+          <p class="catalog-item-image">
+            <a href="#">
+              <img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»" >
+            </a>
+          </p>
+          <p class="catalog-item-price">
+            <b>2900 р</b>
+            <a class="button" href="#">Купить</a>
+          </p>
           </li>
-
           <li class="catalog-item">
             <h3>
               <a href="#">
@@ -172,7 +174,7 @@
             </p>
           </li>
         </ul>
-        <ul class="pagination-list" aria-label="Группа кнопок для навигации по страницам каталога">
+        <ul class="pagination-list">
           <li class="pagination-item"><a href="#">1</a></li>
           <li class="pagination-item pagination-item-current"><a>2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
@@ -180,6 +182,7 @@
         </ul>
       </section>
     </main>
+
     <footer class="main-footer">
         <p class="footer-contact"></p>
         <div class="footer-social">
@@ -202,18 +205,18 @@
 
           <input type="text" name="username" placeholder="ЛОГИН" value="" aria-label="Введите ваш логин.">
           <input type="password" name="password" placeholder="ПАРОЛЬ" value="" aria-label="Введите ваш пароль.">
-          <input type="checkbox" name="" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке.">
+          <input type="checkbox" name="login-radio" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке.">
           <label for="modal-login-radio">Запомните меня!</label>
           <a href="login.html" aria-label="Ссылка на страницу восстановления пароля.">Я забыл пароль!</a>
           <button class="button form-apointment-button" type="submit" aria-label="Кнопка входа в учетную запись.">Войти</button>
         </form>
-        <button type="button" class="modal-close" aria-label="Кнопка закрытия окна входа на сайт."><img src="img/cross.svg" width="19px" height="19px"></button>
+        <button type="button" class="modal-close" aria-label="Кнопка закрытия окна входа на сайт."><img src="img/cross.svg" width="19" height="19" alt="Кпопка крест для закрытия модального окна"></button>
       </section>
 
-       <section class="modal modal-map">
+      <section class="modal modal-map">
         <h2 class="visualy-hidden">Как до нас добраться</h2>
-        <img src="img/map-popup.png" width="782px" height="577px" alt="Карта, на которой показано, как к нам проехать.">
-        <button class="modal-close" type="button" aria-label="Кнопка закрытия окна карты"><img src="img/cross.png" width="19px" height="19px"></button>
+        <img src="img/map-popup.png" width="782" height="577" alt="Карта, на которой показано, как к нам проехать.">
+        <button class="modal-close" type="button" aria-label="Кнопка закрытия окна карты"><img src="img/cross.png" width="19" height="19" alt="Кпопка крест для закрытия модального окна"></button>
       </section>
 
   </body>
