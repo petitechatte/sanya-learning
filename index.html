@@ -1,7 +1,9 @@
 <!-- Сделал по заданию 4 главы 1 курса -->
-<!-- ?Проверь пожалуйста -->
-<!-- ?Прогнал на валидаторе все работает -->
-<!-- ! Спасибо!:) -->
+<!-- Исправил замечания -->
+<!-- ?Прогнал на валидаторе все работает. -->
+<!-- ?Попробовал написать классы по БЭМ --> 
+<!-- ? Перепроверил в браузере и перечитал код-->
+<!-- ! Проверь пожалуйста :) Спасибо!:) -->
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -14,22 +16,22 @@
   <body>
     <header class="main-header">
       <nav class="main-header__main-navigation">
-        <img class="main-header__logo-main" src="img/index-logo.png" width="371" height="155" alt="Логотип барбершопа Бородинский">
         <ul class="main-header__site-navigation site-navigation">
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#" aria-label="Ссылка на страницу с информацией">Информация</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#" aria-label="Ссылка на страницу с новостями">Новости</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="price.html" aria-label="Ссылка на страницу с ипрайс листом">Прайс-лист</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="shop.html" aria-label="Ссылка на страницу магазина">Магазин</a></li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#" aria-label="Ссылка на страницу с контактами">Контакты</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Информация</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Новости</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="price.html">Прайс-лист</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="shop.html">Магазин</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
         </ul>
         <ul class="site-navigation__user-navigation">
-          <li class="site-navigation__login-link"><a href="#" aria-label="Вход в учетную запись.">Вход</a></li>
+          <li class="site-navigation__login-link"><a href="index.html" aria-label="Вход в учетную запись">Вход</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="container">
       <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+      <img class="container__logo-main" src="img/index-logo.png" width="371" height="155" alt="Логотип барбершопа Бородинский">
       <section class="container__features feautures">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features__list">
@@ -76,67 +78,73 @@
         <h2 class="contacts__header">Контактная информация</h2>
         <p class="contacts__address">Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          Телефон: +7 (812) 666-02-66</p>
+          Телефон: +7 (495) 666-02-66</p>
         <p class="contacts__work-time">Время работы:<br>
           пн—пт: с 10:00 до 22:00<br>
           сб—вс: с 10:00 до 19:00</p>
-        <a class="contacts__button" href="#" aria-label="Ссылка на страницу с картой.">Как проехать</a>
-        <a class="contacts__button" href="#" aria-label="Ссылка на страницу с контактами.">Обратная связь</a>
+        <a class="contacts__button button" href="#" aria-label="Ссылка на страницу с картой">Как проехать</a>
+        <a class="contacts__button button" href="#" aria-label="Ссылка на страницу с контактами">Обратная связь</a>
       </section>
-<!-- примерно отсюда и ниже не разгрёб -->
+
       <section class="container__appointment appointment">
         <h2>Записаться</h2>
         <p class="appointment__info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони<p>
-        <form class="appointment__form" action="http://echo.htmlacademy.ru" method="post">
-          <label for="form-date">Дата:</label>
-          <input type="text" name="date" id="form-date" value="" placeholder="08.02.2017" aria-label="Введите дату посещения.">
-          <label for="form-time">Время:</label>
-          <input type="text" name="time" id="form-time" value="" placeholder="10:00" aria-label="Введите время посещения.">
-          <label for="form-name">Ваше имя:</label>
-          <input type="text" name="name" id="form-name" value="" placeholder="Борода" aria-label="Введите ваше имя.">
-          <label for="form-phone">Телефон:</label>
-          <input type="text" name="phone" id="form-phone" value="" placeholder="+7 123 456-78-90" aria-label="Введите ваш телефон.">
-          <input type="submit" value="Отправить" aria-label="Кнопка отправки формы.">
+        <form class="appointment__form form" action="http://echo.htmlacademy.ru" method="post">
+          <label class="form__label" for="form-date">Дата</label>
+          <input class="form__date" type="text" name="date" id="form-date" placeholder="08.02.2017" aria-label="Введите дату посещения">
+          <label class="form__label" for="form-time">Время</label>
+          <input class="form__time" type="text" name="time" id="form-time" placeholder="10:00" aria-label="Введите время посещения">
+          <label class="form__label" for="form-name">Ваше имя</label>
+          <input class="form__name" type="text" name="name" id="form-name" placeholder="Борода" aria-label="Введите ваше имя">
+          <label class="form__label" for="form-phone">Телефон</label>
+          <input class="form__phone" type="text" name="phone" id="form-phone" value="" placeholder="+7 123 456-78-90" aria-label="Введите ваш телефон">
+          <button class="form__button button-form" type="submit" value="Отправить" aria-label="Кнопка отправки формы"></button>
         </form>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <p class="footer-contact">
-        Барбершоп «Бородинский»<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      </p>
-      <div class="footer-social">
-        <b>Давайте дружить</b>
+    <footer class="main-footer__social social">
+      <div class="social__contact-block">
+        <p class="social__contact">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        </p>
+        <a class="social__link-search" href="#">Как нас найти?</a>
+        <p class="social__phone">Телефон: +7 (495) 666-02-66</p>
+      </div>
+      <div class="social__link-block">
+        <b>Давайте дружить!</b>
         <ul>
-          <li><a class="social-button" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте">Вконтакте</a></li>
-          <li><a class="social-button" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook">Фэйсбук</a></li>
-          <li><a class="social-button" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram">Инстаграм</a></li>
+          <li><a class="social__link button-social button-social-vk" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте">Вконтакте</a></li>
+          <li><a class="social__link button-social button-social-fb" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook">Facebook</a></li>
+          <li><a class="social__link button-social button-social-it" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram">Instagram</a></li>
         </ul>
       </div>
-      <p class="footer-copyright">
-      <b>Разработано</b>
-      <a class="button" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML Academy</a>
+      <div class="social__copyright-block">
+        <p class="social__copyright">
+        <b>Разработано:</b>
+        <a class="social__button button" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML-Academy</a>
+    </div>
     </footer>
 
     <section class="modal__login login">
       <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль</p>
+      <p>Введите пожалуйста свой логин и пароль</p>
       <form class="login__form" action="http://echo.htmlacademy.ru" method="post">
-        <input class="" type="text" name="username" placeholder="ЛОГИН" aria-label="Введите ваш логин.">
-        <input class="" type="password" name="password" placeholder="ПАРОЛЬ" aria-label="Введите ваш пароль.">
-        <input class="" type="checkbox" name="login-radio" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке.">
-        <label class="" for="modal-login-radio">Запомните меня!</label>
-        <a class="" href="login.html" aria-label="Ссылка на страницу восстановления пароля.">Я забыл пароль!</a>
-        <button class="button form-apointment-button" type="submit" aria-label="Кнопка входа в учетную запись.">Войти</button>
+        <input class="login__username" type="text" name="username" placeholder="ЛОГИН" aria-label="Введите ваш логин">
+        <input class="login__password" type="password" name="password" placeholder="ПАРОЛЬ" aria-label="Введите ваш пароль">
+        <input class="login__radio" type="checkbox" name="login-radio" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке">
+        <label class="login__label" for="modal-login-radio">Запомните меня</label>
+        <a class="login__link" href="login.html" aria-label="Ссылка на страницу восстановления пароля">Я забыл пароль!</a>
+        <button class="login__button button-form" type="submit" aria-label="Кнопка входа в учетную запись">Войти</button>
       </form>
-      <button class="modal-close" type="button" aria-label="Кнопка закрытия окна входа на сайт."></button>
+      <button class="modal__button button-cross" type="button" aria-label="Кнопка закрытия окна входа на сайт"></button>
     </section>
 
     <section class="modal__map map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/map-popup.png" width="766" height="560" alt="Карта, на которой показано, как к нам проехать.">
-      <button class="map__button" type="button" aria-label="Кнопка закрытия окна карты"></button>
+      <img src="img/map-popup.png" width="766" height="560" alt="Карта, на которой показано, как к нам проехать">
+      <button class="map__button button-cross" type="button" aria-label="Кнопка закрытия окна карты"></button>
     </section>
   </body>
 </html>

@@ -1,6 +1,4 @@
-<!-- Сделал по заданию 4 главы 1 курса -->
-<!-- ?Проверь пожалуйста. Прогнал на валидаторе все работает. -->
-<!-- ! Спасибо!:) -->
+
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -12,27 +10,26 @@
 
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-        <img src="img/logo.png" width="111" height="24" alt="Логотип барбершопа Бородинский">
+      <nav class="main-header__main-navigation">
+        <a class="main-header__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
+          <img class="main-header__logo logo-header" src="img/logo.png" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
-        <ul class="site-navigation">
-          <li><a href="info.html" aria-label="Ссылка на страницу с информацией.">Информация</a></li>
-          <li><a href="news.html" aria-label="Ссылка на страницу с новостями.">Новости</a></li>
-          <li ><a href="price.html" aria-label="Ссылка на страницу с ипрайс листом.">Прайс-лист</a></li>
-          <li class="site-navigation-current"><a href="catalog.html" aria-label="Ссылка на текущую страницу магазина.">Магазин</a></li>
-          <li><a href="contacts.html" aria-label="Ссылка на страницу с контактами.">Контакты</a></li>
+        <ul class="main-header__site-navigation site-navigation">
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Информация</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Новости</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="price.html">Прайс-лист</a></li>
+          <li class="site-navigation__item--current"><a class="site-navigation__link" href="shop.html">Магазин</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li class="login-link"><a href="login.html" aria-label="Вход в учетную запись.">Вход</a></li>
+        <ul class="site-navigation__user-navigation">
+          <li class="site-navigation__login-link"><a href="index.html" aria-label="Вход в учетную запись">Вход</a></li>
         </ul>
       </nav>
     </header>
-
+                                                                    <!-- !примерно отсюда и ниже не разгрёб -->
     <main class="container">
-      <h1 class="page-title">Средства для ухода</h1>
-
-      <ul class="breadcrumbs">
+      <h1 class="container__page-title">Средства для ухода</h1>
+      <ul class="container__breadcrumbs breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="item.html">Магазин</a></li>
         <li class="breadcrumbs-current">Средства для ухода</li>
@@ -183,41 +180,29 @@
         </ul>
       </section>
     </main>
-
-    <footer class="main-footer">
-        <p class="footer-contact"></p>
-        <div class="footer-social">
-          <b>Давайте дружить</b>
-          <ul>
-            <li><a class="social-button" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте">Вконтакте</a></li>
-            <li><a class="social-button" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook">Фэйсбук</a></li>
-            <li><a class="social-button" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram">Инстаграм</a></li>
-          </ul>
-        </div>
-        <p class="footer-copyright">
-          <b>Разработано</b>
-          <a class="button" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML Academy</a>
-      </footer>
-
-      <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль</p>
-        <form action="http://echo.htmlacademy.ru" method="post" class="modal-login-form" aria-label="Форма входа в учетную запись.">
-
-          <input type="text" name="username" placeholder="ЛОГИН" value="" aria-label="Введите ваш логин.">
-          <input type="password" name="password" placeholder="ПАРОЛЬ" value="" aria-label="Введите ваш пароль.">
-          <input type="checkbox" name="login-radio" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке.">
-          <label for="modal-login-radio">Запомните меня!</label>
-          <a href="login.html" aria-label="Ссылка на страницу восстановления пароля.">Я забыл пароль!</a>
-          <button class="button form-apointment-button" type="submit" aria-label="Кнопка входа в учетную запись.">Войти</button>
-        </form>
-        <button type="button" class="modal-close" aria-label="Кнопка закрытия окна входа на сайт."><img src="img/cross.svg" width="19" height="19" alt="Кпопка крест для закрытия модального окна"></button>
-      </section>
-
-      <section class="modal modal-map">
-        <h2 class="visualy-hidden">Как до нас добраться</h2>
-        <img src="img/map-popup.png" width="782" height="577" alt="Карта, на которой показано, как к нам проехать.">
-        <button class="modal-close" type="button" aria-label="Кнопка закрытия окна карты"><img src="img/cross.png" width="19" height="19" alt="Кпопка крест для закрытия модального окна"></button>
-      </section>
+                                                                <!-- !примерно отсюда и ВЫШЕ не разгрёб -->
+    <footer class="main-footer__social social">
+      <div class="social__contact-block">
+        <p class="social__contact">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        </p>
+        <a class="social__link-search" href="#">Как нас найти?</a>
+        <p class="social__phone">Телефон: +7 (495) 666-02-66</p>
+      </div>
+      <div class="social__link-block">
+        <b>Давайте дружить!</b>
+        <ul>
+          <li><a class="social__link button-social button-social-vk" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте">Вконтакте</a></li>
+          <li><a class="social__link button-social button-social-fb" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook">Facebook</a></li>
+          <li><a class="social__link button-social button-social-it" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="social__copyright-block">
+        <p class="social__copyright">
+        <b>Разработано:</b>
+        <a class="social__button button" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML-Academy</a>
+      </div>
+    </footer>
   </body>
 </html>
