@@ -1,5 +1,7 @@
 
-/*Обнуление*/
+/* !!! Обнуление */
+
+/*Обнуление Андриканич */
 /*
 *{
 	padding: 0;
@@ -45,6 +47,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 */
 
+/* ??? Глобальные стили */
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -55,3 +59,138 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	border: 0;
 	clip: rect(0 0 0 0)
 }
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Sans Narrow", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: #000000;
+	background-image: url("../img/background-index.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #000000;
+	border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+	background-color: #663d15;
+}
+
+.main-header__main-navigation {
+	font-size: 16px;
+	line-height: 20px;
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.main-header__site-navigation,
+.site-navigation__user-navigation {
+	list-style: none;
+}
+
+.main-header__site-navigation a,
+.site-navigation__user-navigation a {
+	color: #ffffff;
+}
+
+.main-header__site-navigation a:hover,
+.site-navigation__user-navigation a:hover,
+.main-header__site-navigation a:focus,
+.site-navigation__user-navigation a:focus {
+	background-color: #242424;
+}
+
+.features__list {
+	list-style: none;
+}
+
+.features__item {
+	text-align: center;
+}
+
+.features__item h3 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.index-columns {
+	color: #000000;
+
+	background-color: #f8f5f2;
+	background-image: url(../img/background-index-columns.png);
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.index-columns h2 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.news__list {
+	list-style: none;
+}
+
+.news__item time {
+	text-transform: none;
+}
+
+.gallery__content {
+	background-color: #cccccc;
+	border: 7px solid #ffffff;
+}
+
+.form input {
+	font: inherit;
+
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+
+.form input:focus {
+	border-color: #663d15;
+}
+
+.main-footer {
+	
+}
+
+
+
+/* ???index.html */
+
+/* !!! header */
+
+/* !!! body */
+
+/* !!! footer */
+
+/* !contacts__contacts */
+
+/* !social__social-links */
+
+/* ?Социальные иконки интерактив */

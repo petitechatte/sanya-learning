@@ -10,6 +10,8 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп "Бородинский" - Цены</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -40,16 +42,16 @@
       </ul>
       <b class="container__product-slogan">Истинно мужская класика</b>
 
-      <section class="container__resources">
-        <h2 class=" container__header">Мы используем только лучшие средства:</h2>
-          <ul class="container__resource resource">
-            <li class="resource__item-brand">Baxter of California</li>
-            <li class="resource__item-brand">Mr Natty</li>
-            <li class="resource__item-brand">Suavecito</li>
-            <li class="resource__item-brand">Malin+goetz</li>
+      <section class="container__resources resources">
+        <h2 class=" resources__header">Мы используем только лучшие средства:</h2>
+          <ul class="resources__partners partners">
+            <li class="partners__item-brand">Baxter of California</li>
+            <li class="partners__item-brand">Mr Natty</li>
+            <li class="partners__item-brand">Suavecito</li>
+            <li class="partners__item-brand">Malin+goetz</li>
           </ul>
-        <h2 class="container__header">Цены на услуги <br> наших мастеров:</h2>
-        <table class="container__price price">
+        <h2 class="resources__header">Цены на услуги <br> наших мастеров:</h2>
+        <table class="resources__price price">
           <tr>
             <td class="price__service">Стрижка</td>
             <td class="price__price">1500 &#8381;</td>
@@ -63,52 +65,57 @@
             <td class="price__price">350 &#8381;</td>
           </tr>
         </table>
-        <h2 class="container__header">Несколько слов о нас:</h2>
-        <div class="container__description">
-          <p>Наша парикмахерская занимается исключительно
-            мужскими стрижками. Стрижка каждого клиента
-            для нас - это уникальная и продуманная до мелочей
-            работа. Мы не работаем на количество, мы делаем
-            качество.</p>
-        </div>
-        <div class="container__description">
-          <p>Наша мастерская расположена в центре города,
-            поэтому сделать стильную стрижку можно в
-            любое время, даже в обеденный перерыв. Здесь вы
-            можете погрузиться в удобную для вас атмосферу,
-            чувствовать себя комфортно и свободно!</p>
-        </div>
+        <section class="resources__company company">
+          <h2 class="company__header">Несколько слов о нас:</h2>
+          <div class="company__description">
+            <p>Наша парикмахерская занимается исключительно
+              мужскими стрижками. Стрижка каждого клиента
+              для нас - это уникальная и продуманная до мелочей
+              работа. Мы не работаем на количество, мы делаем
+              качество.</p>
+          </div>
+          <div class="company__description">
+            <p>Наша мастерская расположена в центре города,
+              поэтому сделать стильную стрижку можно в
+              любое время, даже в обеденный перерыв. Здесь вы
+              можете погрузиться в удобную для вас атмосферу,
+              чувствовать себя комфортно и свободно!</p>
+          </div>
+        </section>>
       </section>
     </main>
 
-    <footer class="main-footer__social social">
-      <div class="social__contact-block">
-        <p class="social__contact">
+    <footer class="main-footer">
+      <div class="main-footer__contacts contacts">
+        <p class="contacts__adress">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
         </p>
-        <a class="social__link-search" href="#">Как нас найти?</a>
-        <p class="social__phone">Телефон: +7 (495) 666-02-66</p>
+        <a class="contacts__link" href="#">Как нас найти?</a>
+        <p class="contacts__phone">Телефон: +7 (495) 666-02-66</p>
       </div>
-      <div class="social__link-block">
+      <div class="main-footer__links links">
         <b>Давайте дружить!</b>
         <ul>
-          <li><a class="social__link button-social button-social-vk" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте">Вконтакте</a></li>
-          <li><a class="social__link button-social button-social-fb" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook">Facebook</a></li>
-          <li><a class="social__link button-social button-social-it" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram">Instagram</a></li>
+          <li><a class="links__link button-social button-social-vk" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте">Вконтакте</a></li>
+          <li><a class="links__link button-social button-social-fb" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook">Facebook</a></li>
+          <li><a class="links__link button-social button-social-it" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram">Instagram</a></li>
         </ul>
       </div>
-      <div class="social__copyright-block">
-        <p class="social__copyright">
-        <b>Разработано:</b>
-        <a class="social__button button" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML-Academy</a>
+      <div class="main-footer__developer developer">
+        <p class="developer__copyright">
+          <b>Разработано:</b>
+          <a class="developer__button button-social" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML-Academy</a>
+        </p>>
       </div>
     </footer>
 
-        <section class="modal__map map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/map-popup.png" width="766" height="560" alt="Карта, на которой показано, как к нам проехать">
-      <button class="map__button button-cross" type="button" aria-label="Кнопка закрытия окна карты">Закрыть</button>
-    </section>
+    <div class="modal">
+      <section class="modal__map map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/map-popup.png" width="766" height="560" alt="Карта, на которой показано, как к нам проехать">
+        <button class="map__button button" type="button" aria-label="Кнопка закрытия окна карты">Закрыть</button>
+      </section>
+    </div>
   </body>
 </html>
