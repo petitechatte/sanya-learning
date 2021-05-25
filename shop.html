@@ -1,8 +1,11 @@
-<!-- Сделал по заданию 4 главы 1 курса -->
+<!-- Сделал по заданию 5 главы 1 курса -->
 <!-- Исправил замечания -->
-<!-- ?Прогнал на валидаторе все работает. -->
-<!-- ?Попробовал написать классы по БЭМ --> 
+<!-- ?HTML Прогнал на валидаторе все работает. -->
+<!-- ?Исправил ошибки и классы по БЭМ --> 
 <!-- ?Перепроверил в браузере и перечитал код-->
+
+
+
 <!-- !Проверь пожалуйста :) Спасибо!:) -->
 
 <!DOCTYPE html>
@@ -34,15 +37,15 @@
       </nav>
     </header>
 
-    <main class="container">
-      <h1 class="container__page-title">Средства для ухода</h1>
-      <ul class="container__breadcrumbs breadcrumbs">
+    <main class="container-shop">
+      <h1 class="container-shop__page-title">Средства для ухода</h1>
+      <ul class="container-shop__breadcrumbs breadcrumbs">
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="shop.html">Магазин</a></li>
         <li class="breadcrumbs__item--current">Средства для ухода</li>
       </ul>
 
-      <section class="container__filter filter">
+      <section class="container-shop__filter filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" action="http://echo.htmlacademy.ru" method="get">
           <fieldset>
@@ -73,7 +76,7 @@
         </form>
       </section>
 
-      <section class="container__catalog catalog">
+      <section class="container-shop__catalog catalog">
         <div class="catalog__products products">
           <h2 class="visually-hidden">Список средств для ухода</h2>
           <ul class="products__list">
@@ -181,7 +184,7 @@
             </li>
           </ul>
         </div>
-        <div class="container__pagination pagination">
+        <div class="container-shop__pagination pagination">
           <ul class="pagination__list">
             <li class="pagination__item"><a class="pagination__link button-pagination" href="#">1</a></li>
             <li class="pagination__item--current"><a class="pagination__link button-pagination">2</a></li>
@@ -213,7 +216,7 @@
         <p class="developer__copyright">
           <b>Разработано:</b>
           <a class="developer__button button-social" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML-Academy</a>
-        </p>>
+        </p>
       </div>
     </footer>
 
