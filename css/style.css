@@ -286,6 +286,8 @@ a {
 
 /* ???shop.html */
 
+/* !body */
+
 .container-shop {
 	color: #000000;
 
@@ -293,6 +295,144 @@ a {
 	background-image: url(../img/background-index-columns.png);
 	background-position: 0 0;
 	background-repeat: repeat;
+}
+
+.container-shop__page-title {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+/* !breadcrumbs */
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs a {
+	color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+.breadcrumbs__item--current {
+	color: #aba9a7;
+}
+
+/* !filter */
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.filter ul {
+	list-style: none;
+	line-height: 18px;
+}
+
+.filter input:hover,
+.filter input:focus,
+.filter label:hover,
+.filter label:focus {
+	color: #663d15;
+}
+
+.filter input:disabled,
+.filter label:disabled {
+	color: #000000;
+
+	opacity: 0.5;
+}
+
+/* !catalog */
+
+.catalog ul {
+	list-style: none;
+}
+
+.products__item {
+	background-color: #f8f8f8ff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products__item:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.products__item a {
+	color: #000000;
+}
+
+.products__item h3 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.products__category {
+	text-transform: none;
+}
+
+.products__item-price b {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+
+	background-color: #e5e5e5;
+}
+
+.products__item-price .products__button {
+	line-height: 20px;
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.products__item-price .products__button:hover,
+.products__item-price .products__button:focus {
+	background-color: #663d15;
+}
+
+/* !pagination */
+
+.pagination__list {
+	list-style: none;
+}
+
+.pagination__list a {
+	color: #000000;
+}
+
+.pagination__item a {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.pagination__item a:hover,
+.pagination__item a:focus,
+.pagination__item a:active {
+	color: #ffffff;
+	background-color: #663d15;
+}
+
+.pagination__item--current a {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+/* На всякий... */
+
+.pagination__item--current a:hover,
+.pagination__item--current a:focus,
+.pagination__item--current a:active {
+	color: #000000;
+	background-color: #ffffff;
 }
 
 /* ???item.html */
@@ -315,6 +455,11 @@ a {
 
 .breadcrumbs a {
 	color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:hover {
+	text-decoration: underline;
 }
 
 .breadcrumbs__item--current {
@@ -361,4 +506,10 @@ a {
 	background-color: #f9f6f3;
 	background-position: 0 0;
 	background-repeat: repeat;
+}
+
+.container-price b {
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: 700;
 }
