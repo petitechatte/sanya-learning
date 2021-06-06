@@ -3,6 +3,9 @@
 /* ?index page */
 /* ?item page */
 
+/* !Сетки */
+/* !index page */
+
 /* ?Проверил. Прогнал CSS на валидацию -все работает. */
 
 /* !!! Обнуление */
@@ -150,6 +153,15 @@ a {
 }
 
 .index-columns {
+	color: #000000;
+
+	background-color: #f8f5f2;
+	background-image: url(../img/background-index-columns.png);
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.index-columns-2 {
 	color: #000000;
 
 	background-color: #f8f5f2;
@@ -512,4 +524,274 @@ a {
 	font-size: 48px;
 	line-height: 48px;
 	font-weight: 700;
+}
+
+/* !Сеточные стили */
+/* index по заданию 6 главы курса */
+
+body {
+    min-height: 1080px
+}
+
+.container-centerer {
+    width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 10px;
+}
+
+.main-header {
+	min-height: 72px;
+	background-color: #000000;
+}
+
+.main-header__main-navigation {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.main-header__site-navigation {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	width: 620px;
+	list-style: none;
+	min-height: 72px;
+	padding-left: 30px;
+}
+
+.site-navigation__user-navigation {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	width: 140px;
+	list-style: none;
+	min-height: 70px;
+}
+
+.site-navigation__item,
+.site-navigation__item--current,
+.main-header__logo-link {
+    align-self: center;
+}
+
+.site-navigation__login-link {
+	align-self: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 65px;
+}
+
+.container__logo-link {
+	margin-top: 75px;
+	justify-self: center;
+	align-self: center;
+	width: 368px;
+	height: 153px;
+	margin-bottom: 75px;
+}
+
+.container__features {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 80px;
+}
+
+.features__list {
+	min-height: 170px;
+	margin: 0;
+	padding: 0 10px;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+.features__item {
+	width: 300px;
+	min-height: 170px;
+}
+
+.index-columns {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 36px;
+	padding: 50px 80px;
+}
+
+.container__news {
+	width: 400px;
+	min-height: 315px;
+}
+
+.container__gallery {
+	width: 340px;
+	min-height: 315px;
+}
+
+.index-columns-2 {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 80px;
+}
+
+.container__contacts {
+	width: 400px;
+	min-height: 315px;
+}
+
+.container__appointment {
+	width: 340px;
+	min-height: 315px;
+}
+
+.main-footer {
+	min-height: 194px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0;
+}
+
+.main-footer__contacts {
+	display: flex;
+	width: 340px;
+	flex-direction: column;
+	align-self: center;
+}
+
+.main-footer__links {
+	display: flex;
+	width: 160px;
+	flex-direction: column;
+	align-self: center;
+}
+
+.main-footer__developer {
+	display: flex;
+	width: 150px;
+	flex-direction: column;
+	align-self: center;
+}
+
+/* Чтобы убрать границу под футером */
+.modal {
+	position: absolute;
+}
+
+/* Все равно потом буду делать модалки */
+
+/* shop по заданию 6 главы курса */
+
+/* header shop */
+
+.main-header__logo-link{
+	padding-left: 20px;
+}
+
+/* main-shop */
+
+.container-shop h1 {
+	margin: 0;
+	padding-top: 55px;
+	padding-bottom: 18px;
+}
+
+.container-shop__breadcrumbs {
+	padding-left: 0;
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+	min-height: 24px;
+	margin-bottom: 50px;
+}
+
+/* Для сетки фильтра и товаров */
+
+.wrapper-products { 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.container-shop__filter .filter {
+	display: flex;
+	width: 180px;
+	flex-direction: column;
+	min-height: 687px;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+.container-shop__catalog {
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+	min-height: 687px;
+}
+
+.products__list{
+	width: 700px;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-height: 592px;
+	justify-content: space-between;
+	margin-bottom: 43px;
+}
+
+.products__item {
+	margin: 0;
+	padding: 0;
+	width: 220px;
+}
+
+.container-shop__pagination {
+	display: flex;
+	margin-bottom: 49px;
+}
+
+.pagination__list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+    width: 193px;
+	justify-content: space-between;
+}
+
+.pagination__item a,
+.pagination__item--current a {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 43px;
+	height: 43px;
+	justify-content: center;
+	align-items: center;
+}
+
+/* footer shop */
+
+.pagination__list {
+	margin: 0;
+}
+
+/* Для внутренних страниц класс дополнительный */
+
+.inner__page {
+	background-color: #000000;
 }

@@ -20,7 +20,7 @@
 
   <body>
     <header class="main-header">
-      <nav class="main-header__main-navigation">
+      <nav class= "main-header__main-navigation container-centerer">
         <ul class="main-header__site-navigation site-navigation">
           <li class="site-navigation__item"><a class="site-navigation__link" href="#">Информация</a></li>
           <li class="site-navigation__item"><a class="site-navigation__link" href="#">Новости</a></li>
@@ -34,7 +34,7 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="container container-centerer">
       <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
       <a class="container__logo-link">
         <img class="container__logo" src="img/index-logo.png" width="371" height="155" alt="Логотип барбершопа Бородинский">
@@ -83,7 +83,7 @@
         </section>
       </div>
 
-      <div class="index-columns">
+      <div class="index-columns-2">
         <section class="container__contacts contacts">
           <h2 class="contacts__header">Контактная информация</h2>
           <p class="contacts__address">Барбершоп «Бородинский»<br>
@@ -114,7 +114,7 @@
       </div>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container-centerer">
       <div class="main-footer__contacts contacts">
         <p class="contacts__adress">
           Барбершоп «Бородинский»<br>
@@ -139,26 +139,29 @@
       </div>
     </footer>
 
-    <div class="modal">
-      <section class="modal__login login">
-        <h2>Личный кабинет</h2>
-        <p>Введите пожалуйста свой логин и пароль</p>
-        <form class="login__form" action="http://echo.htmlacademy.ru" method="post">
-          <input class="login__username" type="text" name="username" placeholder="ЛОГИН" aria-label="Введите ваш логин">
-          <input class="login__password" type="password" name="password" placeholder="ПАРОЛЬ" aria-label="Введите ваш пароль">
-          <input class="login__checkbox" type="checkbox" name="login-radio" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке">
-          <label class="login__label" for="modal-login-radio">Запомните меня</label>
-          <a class="login__link" href="login.html" aria-label="Ссылка на страницу восстановления пароля">Я забыл пароль!</a>
-          <button class="login__button button" type="submit" aria-label="Кнопка входа в учетную запись">Войти</button>
-        </form>
+    <div class="modal visually-hidden">
+      <div class="wrapper-modal-login">
+        <section class="modal__login login">
+          <h2>Личный кабинет</h2>
+          <p>Введите пожалуйста свой логин и пароль</p>
+          <form class="login__form" action="http://echo.htmlacademy.ru" method="post">
+            <input class="login__username" type="text" name="username" placeholder="ЛОГИН" aria-label="Введите ваш логин">
+            <input class="login__password" type="password" name="password" placeholder="ПАРОЛЬ" aria-label="Введите ваш пароль">
+            <input class="login__checkbox" type="checkbox" name="login-radio" id="modal-login-radio" aria-label="Стоит ли запомнить ваши данные при отправке">
+            <label class="login__label" for="modal-login-radio">Запомните меня</label>
+            <a class="login__link" href="login.html" aria-label="Ссылка на страницу восстановления пароля">Я забыл пароль!</a>
+            <button class="login__button button" type="submit" aria-label="Кнопка входа в учетную запись">Войти</button>
+          </form>
+        </section>
         <button class="modal__button button" type="button" aria-label="Кнопка закрытия окна входа на сайт">Закрыть</button>
-      </section>
+      </div>
 
-      <section class="modal__map map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map-popup.png" width="766" height="560" alt="Карта, на которой показано, как к нам проехать">
-        <button class="map__button button" type="button" aria-label="Кнопка закрытия окна карты">Закрыть</button>
-      </section>
-    </div>
+      <div class="wrapper-modal-map"></div>
+        <section class="modal__map map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <img src="img/map-popup.png" width="766" height="560" alt="Карта, на которой показано, как к нам проехать">
+          <button class="map__button button" type="button" aria-label="Кнопка закрытия окна карты">Закрыть</button>
+        </section>
+      </div>
   </body>
 </html>
