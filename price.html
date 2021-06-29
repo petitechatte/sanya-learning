@@ -1,0 +1,128 @@
+<!-- Сделал по заданию 5 главы 1 курса -->
+<!-- Исправил замечания -->
+<!-- ?HTML Прогнал на валидаторе все работает. -->
+<!-- ?Исправил ошибки и классы по БЭМ -->
+<!-- ?Перепроверил в браузере и перечитал код-->
+
+<!-- ?Сделал базовую стилизацию страницы. Проверил. Прогнал CSS на валидацию -все работает. -->
+
+<!-- !Проверь пожалуйста :) Спасибо!:) -->
+<!-- TODO Исправит стили 6 глава-->
+<!-- ! Когда будешь писать стили, эту страницу пока не трогай. Она особенная.-->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Барбершоп "Бородинский" - Цены</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="inner__page">
+    <header class="main-header">
+      <nav class="main-header__main-navigation">
+        <a class="main-header__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
+          <img class="main-header__logo" src="img/logo.png" width="111" height="24" alt="Логотип барбершопа Бородинский">
+        </a>  <!-- TODO исправить стили -->
+        <ul class="main-header__site-navigation site-navigation">
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Информация</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Новости</a></li>
+          <li class="site-navigation__item--current"><a class="site-navigation__link">Прайс-лист</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="shop.html">Магазин</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="main-header__user-navigation">
+          <li class="main-header__login-link"><a href="#" aria-label="Вход в учетную запись">Вход</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">  <!-- TODO Исправить стили -->
+      <h1>Прайс-лист</h1>
+      <ul class="container__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item--current">Прайс-лист</li>
+      </ul>
+      <b class="container__product-slogan">Истинно мужская класика</b>
+
+      <section class="container__resources resources">  <!-- TODO Убрать все классы по БЭМ - это страница под CMSки  -->
+        <h2 class=" resources__header">Мы используем только лучшие средства:</h2>
+        <ul class="resources__partners partners">
+          <li class="partners__item-brand">Baxter of California</li>
+          <li class="partners__item-brand">Mr Natty</li>
+          <li class="partners__item-brand">Suavecito</li>
+          <li class="partners__item-brand">Malin+goetz</li>
+        </ul>
+        <h2 class="resources__header">Цены на услуги наших мастеров:</h2>
+        <table class="resources__price price">
+          <tr>
+            <td class="price__service">Стрижка</td>
+            <td class="price__value">1500 &#8381;</td>
+          </tr>
+          <tr>
+            <td class="price__service">Стрижка бороды</td>
+            <td class="price__value">500 &#8381;</td>
+          </tr>
+          <tr>
+            <td class="price__service">Накрутка усов</td>
+            <td class="price__value">350 &#8381;</td>
+          </tr>
+        </table>
+        <section class="resources__company company">
+          <h2 class="company__header">Несколько слов о нас:</h2>
+          <div class="company__description">
+            <p>Наша парикмахерская занимается исключительно
+              мужскими стрижками. Стрижка каждого клиента
+              для нас - это уникальная и продуманная до мелочей
+              работа. Мы не работаем на количество, мы делаем
+              качество.</p>
+          </div>
+          <div class="company__description">
+            <p>Наша мастерская расположена в центре города,
+              поэтому сделать стильную стрижку можно в
+              любое время, даже в обеденный перерыв. Здесь вы
+              можете погрузиться в удобную для вас атмосферу,
+              чувствовать себя комфортно и свободно!</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__contacts contacts">
+        <p class="contacts__address">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        </p>
+        <a class="contacts__link" href="#">Как нас найти?</a>
+        <p class="contacts__phone">Телефон: +7 (495) 666-02-66</p>
+      </div>
+      <div class="main-footer__links links">
+        <b>Давайте дружить!</b>
+        <ul>
+          <li><a class="links__link button-social button-social-vk" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте">Вконтакте</a></li>
+          <li><a class="links__link button-social button-social-fb" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook">Facebook</a></li>
+          <li><a class="links__link button-social button-social-it" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="main-footer__developer developer">
+        <p class="developer__copyright">
+          <b>Разработано:</b>
+          <a class="developer__button" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML Academy</a>
+        </p>  <!-- TODO Кнопки переделать -->
+      </div>
+    </footer>
+
+    <div class="modal visually-hidden">
+      <section class="modal__map map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/map-popup.png" width="766" height="560" alt="Карта, на которой показано, как к нам проехать">
+        <button class="map__button modal-button" type="button" aria-label="Кнопка закрытия окна карты">Закрыть</button>
+      </section>  <!-- TODO Кнопки переделать -->
+    </div>
+  </body>
+
+</html>

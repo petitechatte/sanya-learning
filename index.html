@@ -1,12 +1,168 @@
+<!-- Сделал по заданию 5 главы 1 курса -->
+<!-- Исправил замечания -->
+<!-- ?HTML Прогнал на валидаторе все работает. -->
+<!-- ?Исправил ошибки и классы по БЭМ -->
+<!-- ?Перепроверил в браузере и перечитал код-->
+
+<!-- ?Сделал базовую стилизацию страницы. Проверил. Прогнал CSS на валидацию -все работает. -->
+
+<!-- !Проверь пожалуйста :) Спасибо!:) -->
+<!-- TODO Исправит стили 6 глава-->
+
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
-    <title>Барбершоп</title>
+    <title>Барбершоп "Бородинский"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
+    <header class="main-header">
+      <nav class="main-header__main-navigation container-centerer">
+        <ul class="main-header__site-navigation site-navigation">
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Информация</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Новости</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="price.html">Прайс-лист</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="shop.html">Магазин</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="main-header__user-navigation">
+          <li class="main-header__login-link"><a href="#" aria-label="Вход в учетную запись">Вход</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения верстке Саньки Петрова.</p>
+    <main class="container container-centerer">
+      <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+      <a class="container__logo-link">
+        <img class="container__logo" src="img/index-logo.png" width="371" height="155" alt="Логотип барбершопа Бородинский">
+      </a>
+      <section class="container__features feautures">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3>Быстро</h3>
+            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+          </li>
+          <li class="features__item">
+            <h3>Круто</h3>
+            <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+          </li>
+          <li class="features__item">
+            <h3>Дорого</h3>
+            <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+          </li>
+        </ul>
+      </section>
 
+      <div class="index-columns">
+        <section class="container__news news">
+          <h2>Новости</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+              <time datetime="2016-01-11">11 января</time>
+            </li>
+            <li class="news__item">
+              <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+              <time datetime="2016-01-18">18 января</time>
+            </li>
+          </ul>
+          <a class="news__button button" href="#" aria-label="Ссылка для перехода на страницу с новостями">Все новости</a>
+        </section>
+
+        <section class="container__gallery gallery">
+          <h2>Фотогалерея</h2>
+          <figure class="gallery__content">
+            <a class="gallery__link" href="#" aria-label="Фотография ссылка на большое изображение"><img src="img/interior.jpg" width="286" height="164" alt="Интерьер барбершопа"></a>
+          </figure>
+          <button class="gallery__button-back button" type="button" aria-label="Кнопка назад переключения галлереи">Назад</button>
+          <button class="gallery__button-next button" type="button" aria-label="Кнопка вперед переключения галлереи">Вперед</button>
+        </section>
+      </div>
+
+      <div class="index-columns-2">
+        <section class="container__contacts contacts">
+          <h2 class="contacts__header">Контактная информация</h2>
+          <p class="contacts__address">Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            Телефон: +7 (495) 666-02-66</p>
+          <p class="contacts__work-time">Время работы:<br>
+            пн—пт: с 10:00 до 22:00<br>
+            сб—вс: с 10:00 до 19:00</p>
+          <a class="contacts__button button" href="#" aria-label="Ссылка на страницу с картой">Как проехать</a>
+          <a class="contacts__button button" href="#" aria-label="Ссылка на страницу с контактами">Обратная связь</a>
+        </section>
+
+        <section class="container__appointment appointment">
+          <h2>Записаться</h2>
+          <p class="appointment__info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+          <p>
+          <form class="appointment__form form" action="http://echo.htmlacademy.ru" method="post">
+            <label class="form__label" for="form-date">Дата</label>
+            <input class="form__date" type="text" name="date" id="form-date" placeholder="08.02.2017" aria-label="Введите дату посещения">
+            <label class="form__label" for="form-time">Время</label>
+            <input class="form__time" type="text" name="time" id="form-time" placeholder="10:00" aria-label="Введите время посещения">
+            <label class="form__label" for="form-name">Ваше имя</label>
+            <input class="form__name" type="text" name="name" id="form-name" placeholder="Борода" aria-label="Введите ваше имя">
+            <label class="form__label" for="form-phone">Телефон</label>
+            <input class="form__phone" type="text" name="phone" id="form-phone" value="" placeholder="+7 123 456-78-90" aria-label="Введите ваш телефон">
+            <button class="form__button button" type="submit" aria-label="Кнопка отправки формы">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="main-footer container-centerer">
+      <div class="main-footer__contacts contacts">
+        <p class="contacts__address">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        </p>
+        <a class="contacts__link" href="#">Как нас найти?</a>
+        <p class="contacts__phone">Телефон: +7 (495) 666-02-66</p>
+      </div>
+      <div class="main-footer__links links">
+        <b>Давайте дружить!</b>
+        <ul>
+          <li><a class="links__link button-social button-social-vk" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте">Вконтакте</a></li>
+          <li><a class="links__link button-social button-social-fb" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook">Facebook</a></li>
+          <li><a class="links__link button-social button-social-it" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="main-footer__developer developer">
+        <p class="developer__copyright button">
+          <b>Разработано:</b>
+          <a class="developer__button" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML-Academy</a>
+        </p>  <!-- TODO Кнопки переделать -->
+      </div>
+    </footer>
+
+    <div class="modal visually-hidden">
+      <section class="modal__login login">
+        <h2>Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form class="login__form" action="http://echo.htmlacademy.ru" method="post">
+          <input class="login__username" type="text" name="username" placeholder="ЛОГИН" aria-label="Введите ваш логин">
+          <input class="login__password" type="password" name="password" placeholder="ПАРОЛЬ" aria-label="Введите ваш пароль">
+          <input class="login__checkbox" type="checkbox" name="login-checkbox" id="modal-login-checkbox" aria-label="Стоит ли запомнить ваши данные при отправке">
+          <label class="login__label" for="modal-login-checkbox">Запомните меня</label>
+          <a class="login__link" href="#" aria-label="Ссылка на страницу восстановления пароля">Я забыл пароль!</a>
+          <button class="login__button button" type="submit" aria-label="Кнопка входа в учетную запись">Войти</button>
+        </form>
+        <button class="modal__button button-modal" type="button" aria-label="Кнопка закрытия окна входа на сайт">Закрыть</button>
+      </section>  <!-- TODO Кнопки переделать -->
+
+      <section class="modal__map map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/map-popup.png" width="766" height="560" alt="Карта, на которой показано, как к нам проехать">
+        <button class="map__button button-modal" type="button" aria-label="Кнопка закрытия окна карты">Закрыть</button>
+      </section>  <!-- TODO Кнопки переделать -->
+    </div>
   </body>
+
 </html>

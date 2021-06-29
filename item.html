@@ -1,0 +1,122 @@
+<!-- Сделал по заданию 5 главы 1 курса -->
+<!-- Исправил замечания -->
+<!-- ?HTML Прогнал на валидаторе все работает. -->
+<!-- ?Исправил ошибки и классы по БЭМ -->
+<!-- ?Перепроверил в браузере и перечитал код-->
+
+<!-- ?Сделал базовую стилизацию страницы. Проверил. Прогнал CSS на валидацию -все работает. -->
+
+<!-- !Проверь пожалуйста :) Спасибо!:) -->
+<!-- TODO Исправит стили 6 глава-->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Барбершоп "Бородинский" - Набор для путешествий «Baxter of California»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="inner__page">
+    <header class="main-header">
+      <nav class="main-header__main-navigation">
+        <a class="main-header__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
+          <img class="main-header__logo" src="img/logo.png" width="111" height="24" alt="Логотип барбершопа Бородинский">
+        </a>  <!-- TODO исправить стили -->
+        <ul class="main-header__site-navigation site-navigation">
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Информация</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Новости</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="price.html">Прайс-лист</a></li>
+          <li class="site-navigation__item--current"><a class="site-navigation__link" href="shop.html">Магазин</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="main-header__user-navigation">
+          <li class="main-header__login-link"><a href="#" aria-label="Вход в учетную запись">Вход</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">  <!-- TODO исправить стили-->
+      <h1 class="container__page-title">Набор для путешествий «Baxter of California»</h1>
+      <ul class="container__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="shop.html">Магазин</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Средства для ухода</a></li>
+        <li class="breadcrumbs__item--current">Набор для путешествий «Baxter of California»</li>
+      </ul>
+
+      <section class="container__product-photos product-photos">
+        <h2 class="visually-hidden">Изображения товара</h2>
+        <div class="product-photos__full-container">
+          <img src="img/product-big.jpg" width="486" height="524" alt="Фото всего набора">
+        </div>
+        <div class="product-photos__preview-container">
+          <ul class="product-photos__preview">
+            <li class="product-photos__preview-item"><img src="img/product-small-1.jpg" width="166" height="175" alt="Фото в анфас"></li> 
+            <li class="product-photos__preview-item"><img src="img/product-small-2.jpg" width="166" height="175" alt="Фото в профиль"></li>
+            <li class="product-photos__preview-item"><img src="img/product-small-3.jpg" width="166" height="175" alt="Фото отдельной части"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container__product-information product-information">
+        <h2 class="visually-hidden">Описание товара</h2>
+        <p class="product-information__availability">Есть в наличии</p>
+        <p class="product-information__article">Артикул: dexter-ae</p>
+        <p class="product-information__text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной
+          кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство
+          для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным
+          подарком.</p>
+        <p class="product-information__price">
+          <b>2900 &#8381;</b>
+          <a class="product-information__button button" href="#">Купить</a>
+        </p>
+        <h3 class="product-information__header-set">В набор входят:</h3>
+        <ul class="product-information__set">
+          <li class="product-information__set-item">Средство для умывания (50 мл)</li>
+          <li class="product-information__set-item">Увлажняющий крем (50 мл)</li>
+          <li class="product-information__set-item">Крем для бритья (50 мл)</li>
+          <li class="product-information__set-item">Крем после бритья, шампунь (50 мл)</li>
+          <li class="product-information__set-item">Удобная кожаная косметичка</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__contacts contacts">
+        <p class="contacts__address">  <!-- TODO стили переделать -->
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        </p>
+        <a class="contacts__link" href="#">Как нас найти?</a>
+        <p class="contacts__phone">Телефон: +7 (495) 666-02-66</p>
+      </div>
+      <div class="main-footer__links links">
+        <b>Давайте дружить!</b>
+        <ul>
+          <li><a class="links__link button-social button-social-vk" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте">Вконтакте</a></li>
+          <li><a class="links__link button-social button-social-fb" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook">Facebook</a></li>
+          <li><a class="links__link button-social button-social-it" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="main-footer__developer developer">
+        <p class="developer__copyright">
+          <b>Разработано:</b>
+          <a class="developer__button" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML Academy</a>
+        </p>  <!-- TODO Кнопки переделать -->
+      </div>
+    </footer>
+
+    <div class="modal visually-hidden">
+      <section class="modal__map map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/map-popup.png" width="766" height="560" alt="Карта, на которой показано, как к нам проехать">
+        <button class="map__button modal-button" type="button" aria-label="Кнопка закрытия окна карты">Закрыть</button>
+      </section>  <!-- TODO Кнопки переделать -->
+    </div>
+  </body>
+
+</html>
