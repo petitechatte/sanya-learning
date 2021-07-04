@@ -80,8 +80,10 @@
           <figure class="gallery__content">
             <a class="gallery__link" href="#" aria-label="Фотография ссылка на большое изображение"><img src="img/interior.jpg" width="286" height="164" alt="Интерьер барбершопа"></a>
           </figure>
-          <button class="gallery__button-back button" type="button" aria-label="Кнопка назад переключения галлереи">Назад</button>
-          <button class="gallery__button-next button" type="button" aria-label="Кнопка вперед переключения галлереи">Вперед</button>
+          <div class="gallery__wrapper-buttons">
+            <button class="gallery__button-back button" type="button" aria-label="Кнопка назад переключения галлереи">Назад</button>
+            <button class="gallery__button-next button" type="button" aria-label="Кнопка вперед переключения галлереи">Вперед</button>
+          </div>
         </section>
       </div>
 
@@ -94,9 +96,11 @@
           <p class="contacts__work-time">Время работы:<br>
             пн—пт: с 10:00 до 22:00<br>
             сб—вс: с 10:00 до 19:00</p>
-          <a class="contacts__button button" href="#" aria-label="Ссылка на страницу с картой">Как проехать</a>
-          <a class="contacts__button button" href="#" aria-label="Ссылка на страницу с контактами">Обратная связь</a>
-        </section>
+          <div class="contacts__wrapper-contacts-button">
+            <a class="contacts__button button" href="#" aria-label="Ссылка на страницу с картой">Как проехать</a>
+            <a class="contacts__button button" href="#" aria-label="Ссылка на страницу с контактами">Обратная связь</a>
+          </div>
+          </section>
 
         <section class="container__appointment appointment">
           <h2>Записаться</h2>
@@ -117,28 +121,30 @@
       </div>
     </main>
 
-    <footer class="main-footer container-centerer">
-      <div class="main-footer__contacts contacts">
-        <p class="contacts__address">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        </p>
-        <a class="contacts__link" href="#">Как нас найти?</a>
-        <p class="contacts__phone">Телефон: +7 (495) 666-02-66</p>
-      </div>
-      <div class="main-footer__links links">
-        <b>Давайте дружить!</b>
-        <ul>
-          <li><a class="links__link button-social button-social-vk" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a class="links__link button-social button-social-fb" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a class="links__link button-social button-social-it" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram"><span class="visually-hidden">Instagram</span></a></li>
-        </ul>
-      </div>
-      <div class="main-footer__developer developer">
-        <p class="developer__copyright button">
-          <b>Разработано:</b>
-          <a class="developer__button" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML-Academy</a>
-        </p>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper container-centerer">
+        <div class="main-footer__contacts contacts">
+          <p class="contacts__address">
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          </p>
+          <a class="contacts__link" href="#">Как нас найти?</a>
+          <p class="contacts__phone">Телефон: +7 (495) 666-02-66</p>
+        </div>
+        <div class="main-footer__links links">
+          <b>Давайте дружить!</b>
+          <ul>
+            <li><a class="links__link button-social button-social-vk" href="https://vk.com/" aria-label="Барбершоп бородинский Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="links__link button-social button-social-fb" href="https://www.facebook.com/" aria-label="Барбершоп бородинский в Facebook"><span class="visually-hidden">Facebook</span></a></li>
+            <li><a class="links__link button-social button-social-it" href="https://www.instagram.com/" aria-label="Барбершоп бородинский в Instagram"><span class="visually-hidden">Instagram</span></a></li>
+          </ul>
+        </div>
+        <div class="main-footer__developer developer">
+          <p class="developer__copyright button">
+            <b>Разработано:</b>
+            <a class="developer__button" href="https://htmlacademy.ru" aria-label="Ссылка на сайт Академии">HTML-Academy</a>
+          </p>
+        </div>
       </div>
     </footer>
 

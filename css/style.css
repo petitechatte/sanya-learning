@@ -1,59 +1,8 @@
 /* Сделал по заданию 5 главы 1 курса */
-/* ?index page */
-/* ?item page */
+/* Сделал по заданию 6 главы 1 курса */
 /* !Сделал базовую стилизацию */
 /* !Сетки */
 /* ?Проверил. Прогнал CSS на валидацию -все работает. */
-
-
-
-/* !!! Обнуление */
-
-/*Обнуление Андриканич */
-/*
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-}
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-input,button,textarea{font-family:inherit;}
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-
-
-.bigred{
-	font-size: 20px;
-	color: red;
-}
-*/
 
 /* !Глобальные стили */
 
@@ -83,6 +32,15 @@ body {
 	background-repeat: no-repeat;
 }
 
+/* Для внутренних страниц класс дополнительный */
+.inner__page {
+	background-color: #f9f6f3;
+	background-image: url("../img/background-index-section.png");
+	background-position: top center;
+	background-repeat: repeat;
+	color: #000000;
+}
+
 a {
 	text-decoration: none;
 }
@@ -95,6 +53,10 @@ a {
 	text-transform: uppercase;
 	background-color: #000000;
 	border: none;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .button:hover,
@@ -103,7 +65,19 @@ a {
 	background-color: #663d15;
 }
 
-/* ???index.html */
+.main-header__site-navigation .site-navigation__item--current a {
+	background-color: #000000;
+}
+
+.container-centerer {
+  width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 10px;
+}
+
+/* !Базовая разметка */
+/* ! ++++++++++++++++++++++++++++++++++++++++++++++++++++++ index.html */
 
 .main-header__main-navigation {
 	font-size: 16px;
@@ -133,9 +107,6 @@ a {
 	background-color: #242424;
 }
 
-/* !body */
-/* ???index */
-
 .features__list {
 	list-style: none;
 }
@@ -153,7 +124,9 @@ a {
 	line-height: 42px;
 }
 
-.index-columns {
+.index-columns,
+.index-columns-2,
+.modal {
 	color: #000000;
 	background-color: #f8f5f2;
 	background-image: url(../img/background-index-columns.png);
@@ -161,15 +134,9 @@ a {
 	background-repeat: repeat;
 }
 
-.index-columns-2 {
-	color: #000000;
-	background-color: #f8f5f2;
-	background-image: url(../img/background-index-columns.png);
-	background-position: 0 0;
-	background-repeat: repeat;
-}
-
-.index-columns h2 {
+.index-columns h2,
+.index-columns-2 h2,
+.modal h2 {
 	font-size: 30px;
 	line-height: 42px;
 }
@@ -225,18 +192,59 @@ a {
 
 .button-social {
 	color: #ffffff;
+	background-color: #000000;
 }
 
 .button-social-vk {
-  background-image: url(../img/vk.png) center center no-repeat ;
+  background: url(../img/vk.png) center center no-repeat;
 }
 
 .button-social-fb {
-
+  background: url(../img/facebook.png) center center no-repeat;
 }
 
 .button-social-it {
+  background: url(../img/instagram.png) center center no-repeat;
+}
 
+.links ul {
+	display: flex;
+  margin: 0;
+	padding: 0;
+	width: 141px;
+	height: 43px;
+	justify-content: space-between;
+}
+
+.links li {
+	display: block;
+	width: 43px;
+	height: 43px;
+	background-color: #000000;
+}
+
+.links__link {
+  display: block;
+	width: 43px;
+	height: 43px;
+}
+
+.button-social-vk:hover,
+.button-social-vk:focus,
+.button-social-vk:active {
+	background: url(../img/vk-active.png) center center no-repeat, #ffffff ; 
+}
+
+.button-social-fb:hover,
+.button-social-fb:focus,
+.button-social-fb:active {
+	background: url(../img/facebook-active.png) center center no-repeat, #ffffff ; 
+}
+
+.button-social-it:hover,
+.button-social-it:focus,
+.button-social-it:active {
+	background: url(../img/instagram-active.png) center center no-repeat, #ffffff ; 
 }
 
 .developer__button {
@@ -251,19 +259,6 @@ a {
 .developer__copyright .button-social:focus {
 	color: #000000;
 	background-color: #ffffff;
-}
-
-.modal {
-	color: #000000;
-	background-color: #f8f3f0;
-	background-image: url(../img/background-index-columns.png);
-	background-position: 0 0;
-	background-repeat: repeat;
-}
-
-.modal h2 {
-	font-size: 30px;
-	line-height: 42px;
 }
 
 .login__form input[type="text"],
@@ -296,18 +291,9 @@ a {
 	text-decoration: none;
 }
 
-/* !body */
-/* ???shop.html */
+/* ! ++++++++++++++++++++++++++++++++++++++++++++++++ shop.html */
 
-.container-shop {
-	color: #000000;
-	background-color: #f9f6f3;
-	background-image: url(../img/background-index-columns.png);
-	background-position: 0 0;
-	background-repeat: repeat;
-}
-
-.container-shop__page-title {
+.container__page-title {
 	font-size: 30px;
 	line-height: 42px;
 }
@@ -425,17 +411,7 @@ a {
 	background-color: #ffffff;
 }
 
-/* На всякий... */
-
-.pagination__item--current a:hover,
-.pagination__item--current a:focus,
-.pagination__item--current a:active {
-	color: #000000;
-	background-color: #ffffff;
-}
-
-/* !body */
-/* ???item.html */
+/* ! ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ item.html */
 
 .container-item {
 	color: #000000;
@@ -505,40 +481,11 @@ a {
 	font-weight: 700;
 }
 
-/* ссылки на социальные сети в футере ++++++++++++++++++++++++++++++++++++++++++ */
-
-.links ul {
-	display: flex;
-  margin: 0;
-	padding: 0;
-	width: 170px;
-	height: 80px;
-}
-
-.links li {
-	display: block;
-	width: 43px;
-	height: 43px;
-}
-
-.links__link {
-
-}
-
-
-
 /* !Сеточные стили */
-/* index по заданию 6 главы курса */
+/* ! ++++++++++++++++++++++++++++++++++++++++++++++++++++++ index.html */
 
 body {
   min-height: 1080px
-}
-
-.container-centerer {
-  width: 940px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 10px;
 }
 
 .main-header {
@@ -614,12 +561,24 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	
+}
+
+.features__item h3 {
+	display: inline-block;
+	margin: 0;
+	margin-bottom: 17px;
+}
+
+.features__item p {
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 0;
 }
 
 .features__item {
 	width: 300px;
 	min-height: 170px;
+	background: url(../img/marker-features.png) 50% 35% no-repeat;
 }
 
 .index-columns {
@@ -634,9 +593,60 @@ body {
 	min-height: 315px;
 }
 
+.container__news h2 {
+	margin: 0;
+}
+
+.news__list {
+	padding: 0;
+}
+
+.news__list time {
+	display: inline-block;
+	width: 55px;
+	margin-bottom: 20px;
+}
+
+.news__list p {
+	display: inline-block;
+	width: 353px;
+}
+
+.news__button {
+	width: 140px;
+	height: 44px;
+}
+
 .container__gallery {
 	width: 340px;
 	min-height: 315px;
+}
+
+.container__gallery h2{
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.container__gallery figure {
+	margin: 0;
+	width: 286px;
+	height: 164px;
+	margin-bottom: 40px;
+}
+
+.gallery__wrapper-buttons {
+	display: flex;
+	width: 301px;
+	flex-direction: row;
+	margin-top: 60px;
+	justify-content: space-between;
+}
+
+.gallery__button-back,
+.gallery__button-next {
+  display: flex;
+	width: 140px;
+	height: 44px;
 }
 
 .index-columns-2 {
@@ -655,7 +665,44 @@ body {
 	min-height: 315px;
 }
 
-.main-footer {
+.contacts__header {
+	margin: 0;
+}
+
+.contacts__wrapper-contacts-button {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin-top: 20px;
+}
+
+.contacts__button {
+	width: 140px;
+	height: 43px;
+}
+
+.container__appointment h2 {
+	margin: 0;
+}
+
+.appointment__info {
+	margin: 0;
+	margin-top: 14px;
+}
+
+
+
+.appointment__form {
+  display: flex;
+	flex-direction: column;
+}
+
+.form__button {
+	width: 300px;
+	height: 43px;
+}
+
+.main-footer__wrapper {
 	min-height: 194px;
 	display: flex;
 	justify-content: space-between;
@@ -687,10 +734,9 @@ body {
 .modal {
 	position: absolute;
 }
-
 /* Все равно потом буду делать модалки */
 
-/* shop по заданию 6 главы курса */
+/* ! ++++++++++++++++++++++++++++++++++++++++++++++++ shop.html */
 
 /* header shop */
 
@@ -791,8 +837,5 @@ fieldset {
 	margin: 0;
 }
 
-/* Для внутренних страниц класс дополнительный */
-
-.inner__page {
-	background-color: #000000;
-}
+/* ! ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ item.html */
+/* ! ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ price.html */
